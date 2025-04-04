@@ -1,0 +1,41 @@
+﻿@page "/"
+@using AplicacaoBlazor.Models
+@using AplicacaoBlazor.Interface
+@using AplicacaoBlazor.Models
+@inject IUsuarioService Repo
+
+<h1>Usuários</h1>
+
+@if (usuarios == null)
+{
+    <p>Carregando...</p>
+}
+else
+{
+    <ul>
+        @foreach (var usuario in usuarios)
+        {
+            <li>@usuario.IdUsuario</li>
+            <li>@usuario.UsNome</li>
+            <li>@usuario.UsEmail</li>
+            <li>@usuario.UsSenha</li>
+        }
+    </ul>
+}
+
+@code {
+    private List<TbUsuario>? usuarios; // Adicione o nullable (?)
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            usuarios = await Repo.ListaUsuarios();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Erro ao carregar usuários: {ex.Message}");
+    // Trate o erro adequadamente
+        }
+    }
+}
