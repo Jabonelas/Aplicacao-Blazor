@@ -12,58 +12,67 @@
 <div class="live-preview">
     <!-- Remove asp-controller/action (não usado em Blazor) -->
     <form @onsubmit="HandleSubmit">
-    <div class="row g-3">
-        <p class="text-muted">Dados</p>
+        <div class="row g-3">
+            <p class="text-muted">Dados</p>
 
-        <div class="col-lg-6">
-            <div class="form-floating">
-                <input @bind="usuario.UsNome" type="text" class="form-control"
-                       minlength="10" maxlength="200" placeholder="Nome Abreviado">
-                <label>Nome</label>
+            <div class="col-lg-6">
+                <div class="form-floating">
+                    <input @bind="usuario.UsNome" type="text" class="form-control"
+                           minlength="10" maxlength="200" placeholder="Nome Abreviado">
+                    <label>Nome</label>
+                </div>
+            </div>
+
+            <p class="text-muted">E-mail</p>
+
+            <div class="col-lg-6">
+                <div class="form-floating">
+                    <input @bind="usuario.UsEmail" type="email" class="form-control"
+                           placeholder="Email" minlength="2">
+                    <label>E-mail</label>
+                </div>
+
+                @if (!string.IsNullOrEmpty(erroEmail))
+                {
+                    <div class="text-danger small mt-1">@erroEmail</div>
+                }
+
+            </div>
+
+            <p class="text-muted">Senha</p>
+
+            <div class="col-lg-4">
+                <div class="form-floating">
+                    <input @bind="usuario.UsSenha" type="password" class="form-control"
+                           placeholder="Senha" minlength="2" maxlength="12">
+                    <label>Senha</label>
+                </div>
+            </div>
+
+            <div class="col-lg-12">
+                <div class="text-end">
+                    <button type="submit" class="btn btn-primary">Salvar</button>
+                </div>
             </div>
         </div>
-
-        <p class="text-muted">E-mail</p>
-
-        <div class="col-lg-6">
-            <div class="form-floating">
-                <input @bind="usuario.UsEmail" type="email" class="form-control"
-                       placeholder="Email" minlength="2">
-                <label>E-mail</label>
-            </div>
-        </div>
-
-        <p class="text-muted">Senha</p>
-
-        <div class="col-lg-4">
-            <div class="form-floating">
-                <input @bind="usuario.UsSenha" type="password" class="form-control"
-                       placeholder="Senha" minlength="2" maxlength="12">
-                <label>Senha</label>
-            </div>
-        </div>
-
-        <div class="col-lg-12">
-            <div class="text-end">
-                <button type="submit" class="btn btn-primary">Salvar</button>
-            </div>
-        </div>
-    </div>
     </form>
 </div>
 
 @code {
 
+    [Parameter]
+    public int id { get; set; }
+
     private TbUsuario usuario = new TbUsuario(); // Objeto para armazenar os dados do formulário
 
+    private string erroEmail = "";
+
+    private bool isEdicaoOk = true;
 
     protected override async Task OnInitializedAsync()
     {
         await CarregarFuncionario();
     }
-
-    [Parameter]
-    public int id { get; set; }
 
     private async Task CarregarFuncionario()
     {
@@ -73,10 +82,9 @@
         }
         catch (Exception ex)
         {
-            // await JSRuntime.InvokeVoidAsync("console.error", $"Erro ao carregar funcionários: {ex.Message}");
+            await JSRuntime.InvokeVoidAsync("console.error", $"Erro ao carregar funcionários: {ex.Message}");
         }
     }
-
 
     private async Task HandleSubmit()
     {
@@ -84,9 +92,17 @@
         {
             try
             {
-                await Usuario.EditarUsuario(usuario);
+                isEdicaoOk = await Usuario.EditarUsuario(usuario);
 
-                Navigation.NavigateTo("/lista-usuarios-cadastrados", forceLoad: true);
+                if (isEdicaoOk)
+                {
+                    erroEmail = "";
+                    Navigation.NavigateTo("/lista-usuarios-cadastrados", forceLoad: true);
+                }
+                else
+                {
+                    erroEmail = "E-mail já cadastrado!";
+                }
             }
             catch (Exception ex)
             {
@@ -94,7 +110,6 @@
             }
         }
     }
-
 }
 
 

@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\israe\\source\\repos\\AplicacaoBlazor\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{440B5003-ED99-4AC7-B8CD-B1AFF149D273}|AplicacaoBlazor\\AplicacaoBlazor.csproj|c:\\users\\israe\\source\\repos\\aplicacaoblazor\\aplicacaoblazor\\data\\bancocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{440B5003-ED99-4AC7-B8CD-B1AFF149D273}|AplicacaoBlazor\\AplicacaoBlazor.csproj|solutionrelative:aplicacaoblazor\\data\\bancocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{440B5003-ED99-4AC7-B8CD-B1AFF149D273}|AplicacaoBlazor\\AplicacaoBlazor.csproj|c:\\users\\israe\\source\\repos\\aplicacaoblazor\\aplicacaoblazor\\pages\\usuario\\editarusuario.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{440B5003-ED99-4AC7-B8CD-B1AFF149D273}|AplicacaoBlazor\\AplicacaoBlazor.csproj|solutionrelative:aplicacaoblazor\\pages\\usuario\\editarusuario.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{440B5003-ED99-4AC7-B8CD-B1AFF149D273}|AplicacaoBlazor\\AplicacaoBlazor.csproj|c:\\users\\israe\\source\\repos\\aplicacaoblazor\\aplicacaoblazor\\pages\\usuario\\cadastrarusuario.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -19,16 +19,20 @@
       "RelativeMoniker": "D:0:0:{440B5003-ED99-4AC7-B8CD-B1AFF149D273}|AplicacaoBlazor\\AplicacaoBlazor.csproj|solutionrelative:aplicacaoblazor\\service\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{440B5003-ED99-4AC7-B8CD-B1AFF149D273}|AplicacaoBlazor\\AplicacaoBlazor.csproj|c:\\users\\israe\\source\\repos\\aplicacaoblazor\\aplicacaoblazor\\repositorio\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{440B5003-ED99-4AC7-B8CD-B1AFF149D273}|AplicacaoBlazor\\AplicacaoBlazor.csproj|solutionrelative:aplicacaoblazor\\repositorio\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{440B5003-ED99-4AC7-B8CD-B1AFF149D273}|AplicacaoBlazor\\AplicacaoBlazor.csproj|c:\\users\\israe\\source\\repos\\aplicacaoblazor\\aplicacaoblazor\\pages\\usuario\\listausuarios.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{440B5003-ED99-4AC7-B8CD-B1AFF149D273}|AplicacaoBlazor\\AplicacaoBlazor.csproj|solutionrelative:aplicacaoblazor\\pages\\usuario\\listausuarios.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{440B5003-ED99-4AC7-B8CD-B1AFF149D273}|AplicacaoBlazor\\AplicacaoBlazor.csproj|c:\\users\\israe\\source\\repos\\aplicacaoblazor\\aplicacaoblazor\\interface\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{440B5003-ED99-4AC7-B8CD-B1AFF149D273}|AplicacaoBlazor\\AplicacaoBlazor.csproj|solutionrelative:aplicacaoblazor\\interface\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{440B5003-ED99-4AC7-B8CD-B1AFF149D273}|AplicacaoBlazor\\AplicacaoBlazor.csproj|c:\\users\\israe\\source\\repos\\aplicacaoblazor\\aplicacaoblazor\\dto\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{440B5003-ED99-4AC7-B8CD-B1AFF149D273}|AplicacaoBlazor\\AplicacaoBlazor.csproj|solutionrelative:aplicacaoblazor\\dto\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{440B5003-ED99-4AC7-B8CD-B1AFF149D273}|AplicacaoBlazor\\AplicacaoBlazor.csproj|c:\\users\\israe\\source\\repos\\aplicacaoblazor\\aplicacaoblazor\\aplicacaoblazor.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{440B5003-ED99-4AC7-B8CD-B1AFF149D273}|AplicacaoBlazor\\AplicacaoBlazor.csproj|solutionrelative:aplicacaoblazor\\aplicacaoblazor.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{440B5003-ED99-4AC7-B8CD-B1AFF149D273}|AplicacaoBlazor\\AplicacaoBlazor.csproj|c:\\users\\israe\\source\\repos\\aplicacaoblazor\\aplicacaoblazor\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{440B5003-ED99-4AC7-B8CD-B1AFF149D273}|AplicacaoBlazor\\AplicacaoBlazor.csproj|solutionrelative:aplicacaoblazor\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,21 +42,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BancoContext.cs",
-              "DocumentMoniker": "C:\\Users\\israe\\source\\repos\\AplicacaoBlazor\\AplicacaoBlazor\\Data\\BancoContext.cs",
-              "RelativeDocumentMoniker": "AplicacaoBlazor\\Data\\BancoContext.cs",
-              "ToolTip": "C:\\Users\\israe\\source\\repos\\AplicacaoBlazor\\AplicacaoBlazor\\Data\\BancoContext.cs",
-              "RelativeToolTip": "AplicacaoBlazor\\Data\\BancoContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T22:10:48.056Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
@@ -63,15 +54,64 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EditarUsuario.razor",
+              "DocumentMoniker": "C:\\Users\\israe\\source\\repos\\AplicacaoBlazor\\AplicacaoBlazor\\Pages\\Usuario\\EditarUsuario.razor",
+              "RelativeDocumentMoniker": "AplicacaoBlazor\\Pages\\Usuario\\EditarUsuario.razor",
+              "ToolTip": "C:\\Users\\israe\\source\\repos\\AplicacaoBlazor\\AplicacaoBlazor\\Pages\\Usuario\\EditarUsuario.razor",
+              "RelativeToolTip": "AplicacaoBlazor\\Pages\\Usuario\\EditarUsuario.razor",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAkwHAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-05T00:41:26.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "UsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\israe\\source\\repos\\AplicacaoBlazor\\AplicacaoBlazor\\Repositorio\\UsuarioRepository.cs",
+              "RelativeDocumentMoniker": "AplicacaoBlazor\\Repositorio\\UsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\israe\\source\\repos\\AplicacaoBlazor\\AplicacaoBlazor\\Repositorio\\UsuarioRepository.cs",
+              "RelativeToolTip": "AplicacaoBlazor\\Repositorio\\UsuarioRepository.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAF0AAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T23:06:11.847Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\israe\\source\\repos\\AplicacaoBlazor\\AplicacaoBlazor\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "AplicacaoBlazor\\Pages\\Index.razor",
+              "ToolTip": "C:\\Users\\israe\\source\\repos\\AplicacaoBlazor\\AplicacaoBlazor\\Pages\\Index.razor",
+              "RelativeToolTip": "AplicacaoBlazor\\Pages\\Index.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-04T22:56:50.873Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ListaUsuarios.razor",
+              "DocumentMoniker": "C:\\Users\\israe\\source\\repos\\AplicacaoBlazor\\AplicacaoBlazor\\Pages\\Usuario\\ListaUsuarios.razor",
+              "RelativeDocumentMoniker": "AplicacaoBlazor\\Pages\\Usuario\\ListaUsuarios.razor",
+              "ToolTip": "C:\\Users\\israe\\source\\repos\\AplicacaoBlazor\\AplicacaoBlazor\\Pages\\Usuario\\ListaUsuarios.razor",
+              "RelativeToolTip": "AplicacaoBlazor\\Pages\\Usuario\\ListaUsuarios.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-04T22:42:23.576Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "IUsuarioRepository.cs",
               "DocumentMoniker": "C:\\Users\\israe\\source\\repos\\AplicacaoBlazor\\AplicacaoBlazor\\Interface\\IUsuarioRepository.cs",
               "RelativeDocumentMoniker": "AplicacaoBlazor\\Interface\\IUsuarioRepository.cs",
               "ToolTip": "C:\\Users\\israe\\source\\repos\\AplicacaoBlazor\\AplicacaoBlazor\\Interface\\IUsuarioRepository.cs",
               "RelativeToolTip": "AplicacaoBlazor\\Interface\\IUsuarioRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T02:06:39.231Z"
+              "WhenOpened": "2025-04-04T23:08:06.538Z"
             },
             {
               "$type": "Document",
@@ -81,7 +121,7 @@
               "RelativeDocumentMoniker": "AplicacaoBlazor\\Service\\UsuarioService.cs",
               "ToolTip": "C:\\Users\\israe\\source\\repos\\AplicacaoBlazor\\AplicacaoBlazor\\Service\\UsuarioService.cs",
               "RelativeToolTip": "AplicacaoBlazor\\Service\\UsuarioService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABBAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAA9wD8AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-04T02:06:34.513Z"
             },
@@ -93,33 +133,9 @@
               "RelativeDocumentMoniker": "AplicacaoBlazor\\Interface\\IUsuarioService.cs",
               "ToolTip": "C:\\Users\\israe\\source\\repos\\AplicacaoBlazor\\AplicacaoBlazor\\Interface\\IUsuarioService.cs",
               "RelativeToolTip": "AplicacaoBlazor\\Interface\\IUsuarioService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-04T02:06:23.792Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UsuarioDTO.cs",
-              "DocumentMoniker": "C:\\Users\\israe\\source\\repos\\AplicacaoBlazor\\AplicacaoBlazor\\DTO\\UsuarioDTO.cs",
-              "RelativeDocumentMoniker": "AplicacaoBlazor\\DTO\\UsuarioDTO.cs",
-              "ToolTip": "C:\\Users\\israe\\source\\repos\\AplicacaoBlazor\\AplicacaoBlazor\\DTO\\UsuarioDTO.cs",
-              "RelativeToolTip": "AplicacaoBlazor\\DTO\\UsuarioDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T02:03:44.622Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AplicacaoBlazor.csproj",
-              "DocumentMoniker": "C:\\Users\\israe\\source\\repos\\AplicacaoBlazor\\AplicacaoBlazor\\AplicacaoBlazor.csproj",
-              "RelativeDocumentMoniker": "AplicacaoBlazor\\AplicacaoBlazor.csproj",
-              "ToolTip": "C:\\Users\\israe\\source\\repos\\AplicacaoBlazor\\AplicacaoBlazor\\AplicacaoBlazor.csproj",
-              "RelativeToolTip": "AplicacaoBlazor\\AplicacaoBlazor.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-04-04T02:03:22.682Z"
             },
             {
               "$type": "Document",
@@ -129,10 +145,9 @@
               "RelativeDocumentMoniker": "AplicacaoBlazor\\Pages\\Usuario\\CadastrarUsuario.razor",
               "ToolTip": "C:\\Users\\israe\\source\\repos\\AplicacaoBlazor\\AplicacaoBlazor\\Pages\\Usuario\\CadastrarUsuario.razor",
               "RelativeToolTip": "AplicacaoBlazor\\Pages\\Usuario\\CadastrarUsuario.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAAAAAAAAowFIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-04T01:50:44.568Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-04T01:50:44.568Z"
             }
           ]
         },

@@ -21,36 +21,78 @@ namespace AplicacaoBlazor.Repositorio
 
         public async Task AdicionarUsuarioAsync(TbUsuario _usuario)
         {
-            context.TbUsuarios.AddAsync(_usuario);
-            context.SaveChangesAsync();
+            try
+            {
+                context.TbUsuarios.AddAsync(_usuario);
+                context.SaveChangesAsync();
+            }
+            catch (DbUpdateException ex)
+            {
+                throw new Exception("Erro desconhecido ao adicionar usuário.", ex);
+            }
+        }
+
+        public async Task<bool> IsEmailExisteAsync(string _email)
+        {
+            try
+            {
+                bool isEmailExiste = await context.TbUsuarios.AnyAsync(x => x.UsEmail == _email);
+
+                return isEmailExiste;
+            }
+            catch (InvalidOperationException ex)
+            {
+                throw new Exception("Erro desconhecido ao buscar email do usuário.", ex);
+            }
         }
 
         public async Task<TbUsuario> ObterUsuarioIdAsync(int _idUsuario)
         {
-            TbUsuario usuario = context.TbUsuarios.FirstOrDefault(x => x.IdUsuario == _idUsuario);
+            try
+            {
+                TbUsuario usuario = context.TbUsuarios.FirstOrDefault(x => x.IdUsuario == _idUsuario);
 
-            return usuario;
+                return usuario;
+            }
+            catch (InvalidOperationException ex)
+            {
+                throw new Exception("Erro desconhecido ao buscar usuário por ID.", ex);
+            }
         }
 
         public async Task EditarUsuarioAsync(TbUsuario _usuario)
         {
-            context.TbUsuarios.Update(_usuario);
-            context.SaveChangesAsync();
+            try
+            {
+                context.TbUsuarios.Update(_usuario);
+                context.SaveChangesAsync();
+            }
+            catch (DbUpdateException ex)
+            {
+                throw new Exception("Falha ao atualizar os dados do usuário no banco de dados.", ex);
+            }
         }
 
         public async Task<bool> DeletarUsuarioAsync(int id)
         {
-            var usuario = await context.TbUsuarios.FindAsync(id);
-
-            if (usuario != null)
+            try
             {
-                context.TbUsuarios.Remove(usuario);
-                await context.SaveChangesAsync();
+                var usuario = await context.TbUsuarios.FindAsync(id);
 
-                return true;
+                if (usuario != null)
+                {
+                    context.TbUsuarios.Remove(usuario);
+                    await context.SaveChangesAsync();
+
+                    return true;
+                }
+
+                return false;
             }
-
-            return false;
+            catch (DbUpdateException ex)
+            {
+                throw new Exception("Falha ao deletar usuário no banco de dados.", ex);
+            }
         }
     }
 }

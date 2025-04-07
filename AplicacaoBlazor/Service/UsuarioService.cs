@@ -15,8 +15,13 @@ namespace AplicacaoBlazor.Service
             usuarioRepository = _usuarioRepository;
         }
 
-        public async Task CadastrarUsuario(UsuarioDTO _usuario)
+        public async Task<bool> CadastrarUsuario(UsuarioDTO _usuario)
         {
+            if (await IsEmailExiste(_usuario.email))
+            {
+                return false;
+            }
+
             TbUsuario usuario = new TbUsuario();
 
             usuario.UsNome = _usuario.nome;
@@ -24,6 +29,15 @@ namespace AplicacaoBlazor.Service
             usuario.UsSenha = _usuario.senha;
 
             await usuarioRepository.AdicionarUsuarioAsync(usuario);
+
+            return true;
+        }
+
+        public async Task<bool> IsEmailExiste(string _email)
+        {
+            bool isEmailExiste = await usuarioRepository.IsEmailExisteAsync(_email);
+
+            return isEmailExiste;
         }
 
         public async Task<List<TbUsuario>> ListaUsuarios()
@@ -47,9 +61,16 @@ namespace AplicacaoBlazor.Service
             return usuario;
         }
 
-        public async Task EditarUsuario(TbUsuario _usuario)
+        public async Task<bool> EditarUsuario(TbUsuario _usuario)
         {
+            if (await IsEmailExiste(_usuario.UsEmail))
+            {
+                return false;
+            }
+
             await usuarioRepository.EditarUsuarioAsync(_usuario);
+
+            return true;
         }
     }
 }

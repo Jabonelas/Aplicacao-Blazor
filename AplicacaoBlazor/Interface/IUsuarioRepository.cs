@@ -6,6 +6,8 @@ namespace AplicacaoBlazor.Interface
     {
         Task AdicionarUsuarioAsync(TbUsuario _usuario);
 
+        Task<bool> IsEmailExisteAsync(string _email);
+
         Task<List<TbUsuario>> ObterTodosUsuairosAsync();
 
         Task<TbUsuario> ObterUsuarioIdAsync(int _id);
