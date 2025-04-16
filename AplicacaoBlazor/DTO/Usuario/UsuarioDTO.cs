@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace AplicacaoBlazor.DTO
+namespace AplicacaoBlazor.DTO.Usuario
 {
     public class UsuarioDTO
     {
@@ -15,8 +15,8 @@ namespace AplicacaoBlazor.DTO
         public string email { get; set; }
 
         [Required(ErrorMessage = "A senha é obrigatório!")]
-        [MaxLength(50, ErrorMessage = "O senha deve ter no máximo 50 caracteres.")]
-        [MinLength(10, ErrorMessage = "O senha deve ter no mínimo 10 caracteres.")]
+        [MaxLength(50, ErrorMessage = "A senha deve ter no máximo 50 caracteres.")]
+        [MinLength(10, ErrorMessage = "A senha deve ter no mínimo 10 caracteres.")]
         public string senha { get; set; }
     }
 }

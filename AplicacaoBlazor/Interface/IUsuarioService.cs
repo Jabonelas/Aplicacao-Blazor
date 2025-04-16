@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel;
-using AplicacaoBlazor.DTO;
+using AplicacaoBlazor.DTO.Usuario;
 using AplicacaoBlazor.Models;
 using AplicacaoBlazor.Pages.Usuario;
 

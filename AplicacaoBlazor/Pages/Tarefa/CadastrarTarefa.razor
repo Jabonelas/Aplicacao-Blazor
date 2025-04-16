@@ -1,0 +1,126 @@
+﻿@page "/cadastrar-tarefa"
+@using AplicacaoBlazor.DTO.Usuario
+@using AplicacaoBlazor.Interface
+@using AplicacaoBlazor.DTO
+@using AplicacaoBlazor.DTO.Tarefa
+@using AplicacaoBlazor.Interface
+@inject IJSRuntime JSRuntime
+@inject IUsuarioService UsuarioService
+@inject ITarefaService TarefaService
+
+<h1>Cadastrar Tarefa</h1>
+
+<EditForm Model="@tarefa" OnValidSubmit="@HandleSubmit">
+    <DataAnnotationsValidator />
+    @* <ValidationSummary /> *@
+
+    <div class="live-preview">
+        <div class="row g-3">
+
+            <p class="text-muted">Dados</p>
+
+    @*         <div class="col-lg-6">
+                <div class="form-floating">
+                    <select @bind="tarefa.UsuarioId" class="form-select">
+                        <option value="">-- Selecione um usuário --</option>
+                        @foreach (var user in listaUsuario)
+                        {
+                            <option value="@user.Id">@user.Nome</option> <!-- Mostre apenas informações relevantes -->
+                        }
+                    </select>
+                    <label>Usuário Existente</label>
+                </div>
+            </div> *@
+
+            <div class="col-lg-6">
+                <div class="form-floating">
+                    <InputText @bind-Value="tarefa.titulo" class="form-control"/>
+                    <label>Titulo</label>
+                    <ValidationMessage For="@(() => tarefa.titulo)"/>
+                </div>
+            </div>
+
+            <p class="text-muted">E-mail</p>
+
+            <div class="col-lg-6">
+                <div class="form-floating">
+                    <InputText @bind-Value="tarefa.descricao" class="form-control" type="string"/>
+                    <label>Descrição'</label>
+                    <ValidationMessage For="@(() => tarefa.descricao)"/>
+                </div>
+
+              @*   @if (!string.IsNullOrEmpty(erroEmail))
+                {
+                    <div class="text-danger small mt-1">@erroEmail</div>
+                } *@
+
+            </div>
+
+            <p class="text-muted">Senha</p>
+
+            <div class="col-lg-4">
+                <div class="form-floating">
+                    <InputText type="password" @bind-Value="tarefa.status" class="form-control"/>
+                    <label>Senha</label>
+                    <ValidationMessage For="@(() => tarefa.status)"/>
+                </div>
+            </div>
+
+            <div class="col-lg-12">
+                <div class="text-end">
+                    <button type="submit" class="btn btn-primary">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</EditForm>
+
+@code {
+    private UsuarioDTO usuario = new UsuarioDTO();
+    private TarefaDTO tarefa = new TarefaDTO();
+
+    private List<UsuarioDTO>  listaUsuario = new List<UsuarioDTO>();
+
+    private string erroEmail = "";
+
+    private bool isCadastroOk = true;
+
+    private int? usuarioSelecionadoId;
+    
+    protected override async Task OnInitializedAsync()
+    {
+        await CarregarUsuario();
+    }
+
+    private async Task CarregarUsuario()
+    {
+      var listaUsuario = await UsuarioService.ListaUsuarios(); // Isso cria uma nova variável local
+
+        StateHasChanged(); 
+    }
+
+    private async Task HandleSubmit()
+    {
+        try
+        {
+            isCadastroOk = await UsuarioService.CadastrarUsuario(usuario);
+
+            if (isCadastroOk)
+            {
+                usuario = new UsuarioDTO();
+                erroEmail = "";
+                await JSRuntime.InvokeVoidAsync("alert", "Usuário cadastrado com sucesso!");
+            }
+            else
+            {
+                erroEmail = "E-mail já cadastrado!";
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Erro ao cadastrar: {ex.Message}");
+
+            await JSRuntime.InvokeVoidAsync("alert", ex);
+        }
+    }
+}

@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel;
-using AplicacaoBlazor.DTO;
+using AplicacaoBlazor.DTO.Usuario;
 using AplicacaoBlazor.Interface;
 using AplicacaoBlazor.Models;
 using Microsoft.AspNetCore.Razor.TagHelpers;

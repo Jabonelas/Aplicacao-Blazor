@@ -2,28 +2,10 @@
 <ArrayOfArrayOfArrayOfString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ArrayOfArrayOfString>
     <ArrayOfString>
-      <string>C:\Users\israe\source\repos\AplicacaoBlazor\AplicacaoBlazor\Pages\Usuario\CadastrarUsuario.razor</string>
+      <string>C:\Users\israe\source\repos\AplicacaoBlazor\AplicacaoBlazor\Pages\Tarefa\CadastrarTarefa.razor</string>
     </ArrayOfString>
     <ArrayOfString>
-      <string>C:\Users\israe\source\repos\AplicacaoBlazor\AplicacaoBlazor\Interface\IUsuarioService.cs</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>C:\Users\israe\source\repos\AplicacaoBlazor\AplicacaoBlazor\Service\UsuarioService.cs</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>C:\Users\israe\source\repos\AplicacaoBlazor\AplicacaoBlazor\Pages\Usuario\ListaUsuarios.razor</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>C:\Users\israe\source\repos\AplicacaoBlazor\AplicacaoBlazor\Pages\Index.razor</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>C:\Users\israe\source\repos\AplicacaoBlazor\AplicacaoBlazor\Repositorio\UsuarioRepository.cs</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>C:\Users\israe\source\repos\AplicacaoBlazor\AplicacaoBlazor\Interface\IUsuarioRepository.cs</string>
-    </ArrayOfString>
-    <ArrayOfString>
-      <string>C:\Users\israe\source\repos\AplicacaoBlazor\AplicacaoBlazor\Pages\Usuario\EditarUsuario.razor</string>
+      <string>C:\Users\israe\source\repos\AplicacaoBlazor\AplicacaoBlazor\Program.cs</string>
     </ArrayOfString>
   </ArrayOfArrayOfString>
 </ArrayOfArrayOfArrayOfString>
