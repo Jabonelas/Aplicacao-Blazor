@@ -7,5 +7,11 @@
     <ArrayOfString>
       <string>C:\Users\israe\source\repos\AplicacaoBlazor\AplicacaoBlazor\Program.cs</string>
     </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\israe\source\repos\AplicacaoBlazor\AplicacaoBlazor\Data\BancoContext.cs</string>
+    </ArrayOfString>
+    <ArrayOfString>
+      <string>C:\Users\israe\source\repos\AplicacaoBlazor\AplicacaoBlazor\Pages\Usuario\ListaUsuarios.razor</string>
+    </ArrayOfString>
   </ArrayOfArrayOfString>
 </ArrayOfArrayOfArrayOfString>
